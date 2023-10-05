@@ -5,3 +5,4 @@ Feel free to browse & re-use !
 
 List of tools,
 - [Wezterm](https://wezfurlong.org/wezterm/index.html)
+- [Karabiner](https://karabiner-elements.pqrs.org)
