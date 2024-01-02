@@ -18,23 +18,27 @@ wezterm.on("update-right-status", function(window, pane)
 	}))
 end)
 
-config.font = wezterm.font("JetBrains Mono")
-config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
+-- config.font = wezterm.font("JetBrains Mono")
 -- config.font = wezterm.font("Menlo")
--- config.color_scheme = "Monokai Soda"
--- config.color_scheme = "carbonfox"
--- config.color_scheme = "Dark+"
--- config.color_scheme = "Catppuccin Mocha (Gogh)"
--- config.color_scheme = "Calamity"
+-- config.font = wezterm.font("MesloLGS NF")
+config.font = wezterm.font("Fira Code")
+-- config.font = wezterm.font("Hack")
+-- config.font = wezterm.font("Monaco")
+
+-- config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
+
+-- config.color_scheme = "tokyonight_night"
+-- config.color_scheme = "Catppuccin Mocha"
+-- config.color_scheme = "nightfox"
 
 config.colors = {
-	background = "#151515",
+	background = "#151c23",
 }
 
 -- config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.9
-config.text_background_opacity = 0.5
+config.window_background_opacity = 1
+config.text_background_opacity = 1
 
 config.keys = {
 	-- Let's get some decent keys (Macos Swiss keyboard)
@@ -67,7 +71,7 @@ config.use_fancy_tab_bar = true
 config.enable_tab_bar = true
 
 config.font_size = 14
-config.line_height = 0.95
+config.line_height = 1.0
 config.enable_scroll_bar = false
 config.window_close_confirmation = "AlwaysPrompt"
 config.audible_bell = "Disabled"
@@ -76,6 +80,7 @@ config.window_padding = {
 	left = 0,
 	top = 0,
 	bottom = 0,
+	right = 0,
 }
 
 return config
