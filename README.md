@@ -9,3 +9,4 @@ List of tools,
 - [Karabiner](https://karabiner-elements.pqrs.org) - keymap configuration tool for MacOs
 - [Lazygit](https://github.com/jesseduffield/lazygit) - Git terminal client
 - [Delta](https://github.com/dandavison/delta) - Diff tool integrated with git and Lazygit
+- [oh-my-zsh](https://ohmyz.sh/) - Great Zsh framework

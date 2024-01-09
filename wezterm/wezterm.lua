@@ -30,24 +30,30 @@ config.font = wezterm.font("Fira Code")
 -- config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 
 --[[ COLOR SCHEMES]]
+-- config.color_scheme = "Catppuccin Macchiato"
+-- config.color_scheme = "Catppuccin Frappe"
 -- config.color_scheme = "Catppuccin Mocha"
 -- config.color_scheme = "tokyonight_night"
 -- config.color_scheme = "nightfox"
+-- config.color_scheme = "Kanagawa (Gogh)"
+-- config.color_scheme = "kanagawabones"
 
 --[[ ROSE-PINE SCHEME ]]
 -- config.colors = rcolors
 -- config.window_frame = rwindow_frame
 
 config.colors = {
-	-- background = "#161616",
-	background = "#191919",
-	-- background = "#212121",
+	-- background = "#181818",
+	-- background = "#202020",
+	background = "#1b1b1e",
+	-- background = "#1d1c1b",
+	-- background = "#2d2d2d",
 }
 
--- config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
 config.window_decorations = "RESIZE"
+config.text_background_opacity = 1
 -- config.window_background_opacity = 0.8
--- config.text_background_opacity = 0.7
+-- config.macos_window_background_blur = 20
 
 config.keys = {
 	-- Let's get some decent keys (Macos Swiss keyboard)
