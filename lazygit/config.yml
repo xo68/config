@@ -92,13 +92,12 @@ git:
 
 os:
   # editCommand: 'floaterm'
-  copyToClipboardCmd: '' # See 'Custom Command for Copying to Clipboard' section
   editPreset: 'nvim' # see 'Configuring File Editing' section
-  edit: ''
-  editAtLine: ''
-  editAtLineAndWait: ''
-  open: ''
-  openLink: ''
+  # edit: 'nvim {{filename}}'
+  # editAtLine: 'nvim --line={{line}} {{filename}}'
+  # editAtLineAndWait: 'nvim --block --line={{line}} {{filename}}'
+  # editInTerminal: true
+  # openDirInEditor: 'nvim {{dir}}'
 
 refresher:
   refreshInterval: 10 # File/submodule refresh interval in seconds. Auto-refresh can be disabled via option 'git.autoRefresh'.

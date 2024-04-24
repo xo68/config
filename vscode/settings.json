@@ -1,0 +1,163 @@
+// General
+{
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.cursorBlinking": "solid",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.tabSize": 4,
+    "editor.cursorSurroundingLines": 10,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 14,
+
+    "breadcrumbs.enabled": false,
+
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.openRepositoryInParentFolders": "never",
+
+    // Vim
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vim.leader": "<space>",
+    "vim.incsearch": true,
+    "vim.statusBarColorControl": false,
+    // "vim.statusBarColors.normal": ["#2d3480", "#ffffff"],
+    // "vim.statusBarColors.insert": ["#3b802d", "#ffffff"],
+    // "vim.statusBarColors.visual": ["#652d80", "#ffffff"],
+    // "vim.statusBarColors.visualline": ["#652d80", "#ffffff"],
+    // "vim.statusBarColors.visualblock": ["#652d80", "#ffffff"],
+    "vim.easymotion": true,
+    // "vim.surround": true,
+    // "vim.sneak": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.useCtrlKeys": true,
+    // "vim.handleKeys": {
+    //     "<C-+>": false,
+    //     "<C-f>": false
+    // },
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "p"],
+            "after": [],
+            "commands": [{ "command": "workbench.action.quickOpen" }]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "after": [],
+            "commands": [{ "command": "workbench.action.quickOpen" }]
+        },
+        // {
+        //     "before": ["<leader>", "u"],
+        //     "after": [],
+        //     "commands": [
+        //         {
+        //             "command": "workbench.action.focusActiveEditorGroup"
+        //         }
+        //     ]
+        // },
+        {
+            "before": ["<leader>", "v"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditor"
+                }
+            ]
+        },
+
+        {
+            "before": ["<leader>", "h"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusFirstEditorGroup"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusSecondEditorGroup"
+                }
+            ]
+        },
+        {
+            "before": ["<ESC>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "t"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleFullScreen"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "a"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleActivityBarVisibility"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "g"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "lazygit.openLazygit"
+                }
+            ]
+        }
+    ],
+
+    // Rainbow plugin / indent
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+
+    // Formatter
+    // TODO: set formatter per language (e.g. prittier markdown, others for python, golang, etc.)
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorCustomizations": {
+        "editorGroup.border": "#a0a3a8",
+        "sideBar.border": "#8f949e"
+    },
+    "workbench.activityBar.location": "hidden"
+}

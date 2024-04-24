@@ -27,7 +27,7 @@ config.font = wezterm.font("Fira Code")
 -- config.font = wezterm.font("MesloLGS NF")
 -- config.font = wezterm.font("Hack")
 -- config.font = wezterm.font("Monaco")
--- config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
+config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 
 --[[ COLOR SCHEMES]]
 -- config.color_scheme = "Catppuccin Macchiato"
@@ -36,24 +36,29 @@ config.font = wezterm.font("Fira Code")
 -- config.color_scheme = "tokyonight_night"
 -- config.color_scheme = "nightfox"
 -- config.color_scheme = "Kanagawa (Gogh)"
--- config.color_scheme = "kanagawabones"
 
 --[[ ROSE-PINE SCHEME ]]
 -- config.colors = rcolors
 -- config.window_frame = rwindow_frame
 
 config.colors = {
-	-- background = "#181818",
+	-- background = "#111111",
+	-- background = "#141414",
+	background = "#181818",
 	-- background = "#202020",
-	background = "#1b1b1e",
+	-- background = "#1b1b1e",
 	-- background = "#1d1c1b",
 	-- background = "#2d2d2d",
 }
 
-config.window_decorations = "RESIZE"
-config.text_background_opacity = 1
+-- config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE|TITLE|MENU|MINIMIZE|MAXIMIZE"
+-- config.window_decorations = "MACOS_FORCE_ENABLE_SHADOW"
+config.window_decorations = "MACOS_FORCE_ENABLE_SHADOW| INTEGRATED_BUTTONS"
+
+-- config.text_background_opacity = 0.9
 -- config.window_background_opacity = 0.8
--- config.macos_window_background_blur = 20
+-- config.macos_window_background_blur = 15
 
 config.keys = {
 	-- Let's get some decent keys (Macos Swiss keyboard)
@@ -86,7 +91,7 @@ config.use_fancy_tab_bar = true
 config.enable_tab_bar = true
 
 config.font_size = 14
-config.line_height = 1.05
+config.line_height = 1.1
 config.enable_scroll_bar = false
 config.window_close_confirmation = "AlwaysPrompt"
 config.audible_bell = "Disabled"

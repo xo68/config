@@ -7,6 +7,7 @@
 
 [core]
     pager = delta
+	editor = nvim
 
 [interactive]
     diffFilter = delta --color-only
@@ -16,9 +17,6 @@
 
 [diff]
     colorMoved = default
-
-[include]
-    path = ~/code/config/delta/themes.gitconfig
 
 [delta]
     true-color = always
@@ -39,3 +37,17 @@
     line-numbers-right-style = cyan
     line-numbers-minus-style = 124
     line-numbers-plus-style = 28
+
+[alias]
+	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+
+[push]
+	default = current
+[rerere]
+	enabled = true
