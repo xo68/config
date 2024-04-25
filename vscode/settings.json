@@ -1,4 +1,3 @@
-// General
 {
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize": 0,
@@ -9,11 +8,10 @@
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.fontSize": 14,
-
+    "editor.lineHeight": 1.35,
     "breadcrumbs.enabled": false,
-
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "never",
@@ -25,22 +23,25 @@
     "vim.leader": "<space>",
     "vim.incsearch": true,
     "vim.statusBarColorControl": false,
-    // "vim.statusBarColors.normal": ["#2d3480", "#ffffff"],
-    // "vim.statusBarColors.insert": ["#3b802d", "#ffffff"],
-    // "vim.statusBarColors.visual": ["#652d80", "#ffffff"],
-    // "vim.statusBarColors.visualline": ["#652d80", "#ffffff"],
-    // "vim.statusBarColors.visualblock": ["#652d80", "#ffffff"],
+    "vim.changeWordIncludesWhitespace": true,
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.ignorecase": true,
     "vim.easymotion": true,
-    // "vim.surround": true,
-    // "vim.sneak": true,
-    "vim.camelCaseMotion.enable": true,
+    "vim.surround": false,
+    "vim.sneak": false,
+    "vim.camelCaseMotion.enable": false,
     "vim.useCtrlKeys": true,
     // "vim.handleKeys": {
-    //     "<C-+>": false,
-    //     "<C-f>": false
+    // "<C-+>": false,
+    // "<C-f>": false
     // },
 
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["K"],
+            "after": ["g", "h"]
+        },
         {
             "before": ["<leader>", "p"],
             "after": [],
@@ -51,15 +52,6 @@
             "after": [],
             "commands": [{ "command": "workbench.action.quickOpen" }]
         },
-        // {
-        //     "before": ["<leader>", "u"],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.focusActiveEditorGroup"
-        //         }
-        //     ]
-        // },
         {
             "before": ["<leader>", "v"],
             "after": [],
@@ -141,6 +133,26 @@
                     "command": "lazygit.openLazygit"
                 }
             ]
+        },
+        {
+            // Used for vim easymotion
+            "before": ["s"],
+            "after": ["leader", "leader", "/"]
+        },
+        {
+            // used by Lead plugin
+            "before": ["S"],
+            "commands": ["leap.find"]
+        },
+        {
+            // Markdown preview
+            "before": ["<leader>", "m", "p"],
+            "commands": ["markdown.showPreviewToSide"]
+        },
+        {
+            // Markdown generate table of content
+            "before": ["<leader>", "m", "g"],
+            "commands": ["extension.we-three.markdownToc"]
         }
     ],
 
@@ -148,16 +160,24 @@
     "indentRainbow.indicatorStyle": "light",
     "indentRainbow.lightIndicatorStyleLineWidth": 1,
 
-    // Formatter
+    // FORMATTER
     // TODO: set formatter per language (e.g. prittier markdown, others for python, golang, etc.)
-    "editor.formatOnSave": true,
     "prettier.tabWidth": 4,
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
     },
-    "workbench.colorCustomizations": {
-        "editorGroup.border": "#a0a3a8",
-        "sideBar.border": "#8f949e"
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
     },
-    "workbench.activityBar.location": "hidden"
+
+    // LINTER
+    "markdownlint.config": {
+        "default": true,
+        "MD007": { "indent": 4 },
+        "MD030": false,
+        "MD033": false,
+        "no-hard-tabs": false
+    }
 }

@@ -25,5 +25,14 @@
     {
         "key": "cmd+down",
         "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "cmd+r cmd+t",
+        "command": "workbench.action.selectTheme"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
     }
 ]
