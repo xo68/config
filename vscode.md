@@ -3,6 +3,7 @@
 <!-- vscode-markdown-toc -->
 
 -   [<u>Core \<Leader\> shortcuts</u>](#<u>core-<leader>-shortcuts</u>)
+    -   [Fuzzy finder](#fuzzy-finder)
 -   [<u>VSCode shortcuts</u>](#<u>vscode-shortcuts</u>)
 -   [<u>Vim specifc shortcuts</u>](#<u>vim-specifc-shortcuts</u>)
 -   [<u>Vim Mode Switching</u>](#<u>vim-mode-switching</u>)
@@ -48,7 +49,8 @@
 
 ## <a name='<u>core-\<leader\>-shortcuts</u>'></a><u>Core \<Leader\> shortcuts</u>
 
-> Leader key is space bar
+> Leader key is space bar.<br>
+> The following shortcuts are only working in a Vim buffer.
 
 | Shortcut            | Mode   | Description                             |
 | ------------------- | ------ | --------------------------------------- |
@@ -62,6 +64,16 @@
 | `<leader> + f`      | Normal | Fullscreen mode                         |
 | `<leader> + a`      | Normal | ActivityBar toggle                      |
 | `<leader> + g`      | Normal | Git LazyGit open in current tab         |
+
+### <a name='fuzzy-finder'></a>Fuzzy finder
+
+-   Default is search for files
+-   `>`: Search commands
+-   `@`: Search Annotations / Symbols in current editor view
+-   `#`: Search Annotations / Symbols in workspace
+-   `%`: Search for text (experimental)
+-   `:`: Go to a specific line number
+-   `task`: Run a specific task
 
 ## <a name='<u>vscode-shortcuts</u>'></a><u>VSCode shortcuts</u>
 
@@ -229,11 +241,6 @@ Enter in <b>Command</b> mode by typing ':'
 
 It is recommended to being with `_` or `^` when recording to start at the
 beginning of the line and ease the execution of the recorded macro
-
-In visual mode,
-
--   Select the text section
--   `:'<,'>norm @q` to execute the macro stored in `q` register
 
 Recording a macro can be recursive
 

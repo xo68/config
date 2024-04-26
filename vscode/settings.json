@@ -12,7 +12,6 @@
     "editor.lineHeight": 1.35,
     "breadcrumbs.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.activityBar.location": "hidden",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "never",
@@ -202,5 +201,7 @@
             "before": ["<"],
             "after": ["<", "g", "v"]
         }
-    ]
+    ],
+    "workbench.colorTheme": "Carbonfox",
+    "workbench.activityBar.location": "hidden"
 }
