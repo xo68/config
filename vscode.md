@@ -1,19 +1,25 @@
-# Table of content
+# VSCode Cheat Sheet by Xavier.
+
+## <a name='table-of-content'></a>Table of content
 
 <!-- vscode-markdown-toc -->
 
--   [<u>Core \<Leader\> shortcuts</u>](#<u>core-<leader>-shortcuts</u>)
-    -   [Fuzzy finder](#fuzzy-finder)
--   [<u>VSCode shortcuts</u>](#<u>vscode-shortcuts</u>)
--   [<u>Vim specifc shortcuts</u>](#<u>vim-specifc-shortcuts</u>)
--   [<u>Vim Mode Switching</u>](#<u>vim-mode-switching</u>)
--   [<u>Vim "Command" Mode</u>](#<u>vim-"command"-mode</u>)
--   [<u>Vim "Normal" mode - Navigation</u>](#<u>vim-"normal"-mode---navigation</u>)
--   [<u>Vim "Normal" mode - Editing</u>](#<u>vim-"normal"-mode---editing</u>)
--   [<u>Vim "Normal" mode - "g" shortcuts</u>](#<u>vim-"normal"-mode---"g"-shortcuts</u>)
--   [<u>Vim "Insert" Mode</u>](#<u>vim-"insert"-mode</u>)
--   [<u>Vim Macros</u>](#<u>vim-macros</u>)
--   [<u>Vim Tips</u>](#<u>vim-tips</u>)
+-   [Table of content](#table-of-content)
+-   [<u>Required plugins</u>](#<u>required-plugins</u>)
+-   [<u>TODO</u>](#<u>todo</u>)
+-   [Getting Started](#getting-started)
+    -   [<u>Core \<Leader\> shortcuts</u>](#<u>core-<leader>-shortcuts</u>)
+        -   [Fuzzy finder](#fuzzy-finder)
+    -   [<u>VSCode shortcuts</u>](#<u>vscode-shortcuts</u>)
+    -   [<u>Vim specifc shortcuts</u>](#<u>vim-specifc-shortcuts</u>)
+    -   [<u>Vim Mode Switching</u>](#<u>vim-mode-switching</u>)
+    -   [<u>Vim "Command" Mode</u>](#<u>vim-"command"-mode</u>)
+    -   [<u>Vim "Normal" mode - Navigation</u>](#<u>vim-"normal"-mode---navigation</u>)
+    -   [<u>Vim "Normal" mode - Editing</u>](#<u>vim-"normal"-mode---editing</u>)
+    -   [<u>Vim "Normal" mode - "g" shortcuts</u>](#<u>vim-"normal"-mode---"g"-shortcuts</u>)
+    -   [<u>Vim "Insert" Mode</u>](#<u>vim-"insert"-mode</u>)
+    -   [<u>Vim Macros</u>](#<u>vim-macros</u>)
+    -   [<u>Vim Tips</u>](#<u>vim-tips</u>)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -21,7 +27,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-# <a name='<u>required-plugins</u>'></a><u>Required plugins</u>
+## <a name='<u>required-plugins</u>'></a><u>Required plugins</u>
 
 -   Vim
 -   Markdown Preview GitHub
@@ -43,13 +49,13 @@
 -   Gruvbox Theme
 -   Material Icon Theme
 
-# <a name='todo'></a><u>TODO</u>
+## <a name='<u>todo</u>'></a><u>TODO</u>
 
 -   Explore Spell checker (i.e. not yet implemented in vim plugin)
 
-# Cheat Sheet
+## <a name='getting-started'></a>Getting Started
 
-## <a name='<u>core-\<leader\>-shortcuts</u>'></a><u>Core \<Leader\> shortcuts</u>
+### <a name='<u>core-\<leader\>-shortcuts</u>'></a><u>Core \<Leader\> shortcuts</u>
 
 > Leader key is space bar.<br>
 > The following shortcuts are only working in a Vim buffer.
@@ -67,7 +73,7 @@
 | `<leader> + a`      | Normal | ActivityBar toggle                      |
 | `<leader> + g`      | Normal | Git LazyGit open in current tab         |
 
-### <a name='fuzzy-finder'></a>Fuzzy finder
+#### <a name='fuzzy-finder'></a>Fuzzy finder
 
 -   Default is search for files
 -   `>`: Search commands
@@ -77,7 +83,7 @@
 -   `:`: Go to a specific line number
 -   `task`: Run a specific task
 
-## <a name='<u>vscode-shortcuts</u>'></a><u>VSCode shortcuts</u>
+### <a name='<u>vscode-shortcuts</u>'></a><u>VSCode shortcuts</u>
 
 | Shortcut                   | Description                   |
 | -------------------------- | ----------------------------- |
@@ -88,7 +94,7 @@
 | `opt + Up or Down`         | Move selected code Up or Down |
 | `opt + Shift + Up or Down` | Copy current line Up or Down  |
 
-## <a name='<u>vim-specifc-shortcuts</u>'></a><u>Vim specifc shortcuts</u>
+### <a name='<u>vim-specifc-shortcuts</u>'></a><u>Vim specifc shortcuts</u>
 
 | Shortcut         | Mode | Description                                       |
 | ---------------- | ---- | ------------------------------------------------- |
@@ -103,7 +109,7 @@
 | `>` or `<`       | N,V  | Indent Right / Left                               |
 | `<Ctrl>d` or `u` | N    | Scoll Up or Down and center the cursor            |
 
-## <a name='<u>vim-mode-switching</u>'></a><u>Vim Mode Switching</u>
+### <a name='<u>vim-mode-switching</u>'></a><u>Vim Mode Switching</u>
 
 | Shortcut  | Description                          |
 | --------- | ------------------------------------ |
@@ -115,7 +121,7 @@
 | `<ctrl>v` | Enter Visual block mode (hilighting) |
 | `ESC`     | Return to Normal mode                |
 
-## <a name='<u>vim-"command"-mode</u>'></a><u>Vim "Command" Mode</u>
+### <a name='<u>vim-"command"-mode</u>'></a><u>Vim "Command" Mode</u>
 
 Enter in <b>Command</b> mode by typing ':'
 
@@ -145,7 +151,7 @@ Enter in <b>Command</b> mode by typing ':'
 | `i`              | Ignore case                 |
 | `c`              | Confirm each subtitution    |
 
-## <a name='<u>vim-"normal"-mode---navigation</u>'></a><u>Vim "Normal" mode - Navigation</u>
+### <a name='<u>vim-"normal"-mode---navigation</u>'></a><u>Vim "Normal" mode - Navigation</u>
 
 | Shortcut                  | Description                                                              |
 | ------------------------- | ------------------------------------------------------------------------ |
@@ -174,7 +180,7 @@ Enter in <b>Command</b> mode by typing ':'
 
 <i> The left, right, up and down arrow keys can also be used to navigate. </i>
 
-## <a name='<u>vim-"normal"-mode---editing</u>'></a><u>Vim "Normal" mode - Editing</u>
+### <a name='<u>vim-"normal"-mode---editing</u>'></a><u>Vim "Normal" mode - Editing</u>
 
 <p>Yank / Cut / Delete commands operate on the specified range,<br>
     - If in <b>Visual</b> mode, that range is the highlighted text <br>
@@ -212,7 +218,7 @@ Enter in <b>Command</b> mode by typing ':'
 
 <p><i> (i)nner, (a)round, (w)ord, (s)entence,(l)etter, (p)aragraph </i></p>
 
-## <a name='<u>vim-"normal"-mode---"g"-shortcuts</u>'></a><u>Vim "Normal" mode - "g" shortcuts</u>
+### <a name='<u>vim-"normal"-mode---"g"-shortcuts</u>'></a><u>Vim "Normal" mode - "g" shortcuts</u>
 
 | Shortcut          | Description                                                                |
 | ----------------- | -------------------------------------------------------------------------- |
@@ -227,13 +233,13 @@ Enter in <b>Command</b> mode by typing ':'
 | `gv`              | Jump back to previouly seclected text and go back into 'Visual' mode       |
 | `g&`              | Execute the previous substituion accross the entire file                   |
 
-## <a name='<u>vim-"insert"-mode</u>'></a><u>Vim "Insert" Mode</u>
+### <a name='<u>vim-"insert"-mode</u>'></a><u>Vim "Insert" Mode</u>
 
 | Shortcut             | Description                      |
 | -------------------- | -------------------------------- |
 | `<Ctrl-o> {Command}` | Execute a command in Insert mode |
 
-## <a name='<u>vim-macros</u>'></a><u>Vim Macros</u>
+### <a name='<u>vim-macros</u>'></a><u>Vim Macros</u>
 
 -   `q{0-9a-zA-Z"}`: Record into a particular register
 -   `q`: Stop recording
@@ -246,7 +252,7 @@ beginning of the line and ease the execution of the recorded macro
 
 Recording a macro can be recursive
 
-## <a name='<u>vim-tips</u>'></a><u>Vim Tips</u>
+### <a name='<u>vim-tips</u>'></a><u>Vim Tips</u>
 
 -   **While searching i.e.'/', how to jump between results live ?**<br>
 
