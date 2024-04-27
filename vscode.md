@@ -30,6 +30,9 @@
 -   Python: Better isort
 -   Python: Black Formatter
 -   Python: Pylance
+-   Python: Pylint
+-   Python: AutoDocstring
+-   Go: Go
 -   Prettier code formatter
 -   Lazygit for VSCode
 -   Color Highlight
@@ -42,7 +45,6 @@
 
 # <a name='todo'></a><u>TODO</u>
 
--   Look at all fuzzy finder stuffs -> # or > or @ command, default file, etc.
 -   Explore Spell checker (i.e. not yet implemented in vim plugin)
 
 # Cheat Sheet

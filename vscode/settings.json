@@ -1,5 +1,8 @@
 {
     // GENERAL
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": false,
+    "editor.fontWeight": 500,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.cursorBlinking": "solid",
@@ -9,7 +12,30 @@
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.fontSize": 14,
-    "editor.lineHeight": 1.35,
+    "editor.lineHeight": 1.4,
+    "editor.tokenColorCustomizations": {
+        // "variables": "#a6a28c",
+        "comments": "#21af3b",
+        "textMateRules": [
+            {
+                "name": "Comment",
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "comment.line",
+                    "comment.line.double-slash",
+                    "punctuation.definition.comment"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                    // "fontStyle": "italic underline"
+                    // "fontStyle": "italic bold underline",
+                }
+            }
+        ]
+    },
+
     "breadcrumbs.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -21,8 +47,20 @@
     "indentRainbow.lightIndicatorStyleLineWidth": 1,
 
     // FORMATTER
-    // TODO: set formatter per language (e.g. prittier markdown, others for python, golang, etc.)
     "prettier.tabWidth": 4,
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
+    "gopls": { "ui.semanticTokens": true },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
@@ -202,6 +240,6 @@
             "after": ["<", "g", "v"]
         }
     ],
-    "workbench.colorTheme": "Carbonfox",
-    "workbench.activityBar.location": "hidden"
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.empty.hint": "hidden"
 }
