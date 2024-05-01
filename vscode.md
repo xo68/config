@@ -52,6 +52,7 @@
 ## <a name='<u>todo</u>'></a><u>TODO</u>
 
 -   Explore Spell checker (i.e. not yet implemented in vim plugin)
+-   Look at Harpoon 2.0
 
 ## <a name='getting-started'></a>Getting Started
 
@@ -60,18 +61,29 @@
 > Leader key is space bar.<br>
 > The following shortcuts are only working in a Vim buffer.
 
-| Shortcut            | Mode   | Description                             |
-| ------------------- | ------ | --------------------------------------- |
-| `<leader> + m + p`  | Normal | Markdown Preview side tab               |
-| `<leader> + m + g`  | Normal | Markdown Generate TOC                   |
-| `<leader> + p OR o` | Normal | open fuzzy finder, workbench quick open |
-| `<leader> + v`      | Normal | Vertical split                          |
-| `<leader> + h OR l` | Normal | Move to left of right split (hjkl)      |
-| `<leader> + e`      | Normal | Explorer toggle                         |
-| `<leader> + t`      | Normal | Terminal toggle                         |
-| `<leader> + f`      | Normal | Fullscreen mode                         |
-| `<leader> + a`      | Normal | ActivityBar toggle                      |
-| `<leader> + g`      | Normal | Git LazyGit open in current tab         |
+| Shortcut           | Mode   | Description                |
+| ------------------ | ------ | -------------------------- |
+| `<leader> + m + p` | Normal | Markdown Preview side tab  |
+| `<leader> + m + g` | Normal | Markdown Generate TOC      |
+| `<leader> + v`     | Normal | Vertical split             |
+| `<leader> + e`     | Normal | Explorer & Activity toggle |
+| `<leader> + f`     | Normal | Fullscreen mode            |
+
+### <a name='<u>vscode-shortcuts</u>'></a><u>VSCode shortcuts</u>
+
+| Shortcut                   | Description                   |
+| -------------------------- | ----------------------------- |
+| `cmd + '`                  | Toogle Terminal               |
+| `cmd + t`                  | New tab with a new Terminal   |
+| `cmd + n`                  | New file                      |
+| `cmd + p`                  | Search                        |
+| `cmd + Left OR Right`      | Select Tab left or right      |
+| `cmd + Up OR Down`         | Increase editor font size     |
+| `cmd + [0-9]`              | Move to pane number           |
+| `cmd + 1`                  | Move to pane number 1 (left)  |
+| `cmd + 2`                  | Move to pane number 2 (right) |
+| `opt + Up or Down`         | Move selected code Up or Down |
+| `opt + Shift + Up or Down` | Copy current line Up or Down  |
 
 #### <a name='fuzzy-finder'></a>Fuzzy finder
 
@@ -82,17 +94,6 @@
 -   `%`: Search for text (experimental)
 -   `:`: Go to a specific line number
 -   `task`: Run a specific task
-
-### <a name='<u>vscode-shortcuts</u>'></a><u>VSCode shortcuts</u>
-
-| Shortcut                   | Description                   |
-| -------------------------- | ----------------------------- |
-| `cmd + '`                  | Toogle Terminal               |
-| `cmd + Left OR Right`      | Select Tab left or right      |
-| `cmd + Up OR Down`         | Increase editor font size     |
-| `cmd + [0-9]`              | Move to pane number           |
-| `opt + Up or Down`         | Move selected code Up or Down |
-| `opt + Shift + Up or Down` | Copy current line Up or Down  |
 
 ### <a name='<u>vim-specifc-shortcuts</u>'></a><u>Vim specifc shortcuts</u>
 

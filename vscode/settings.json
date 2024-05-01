@@ -1,8 +1,11 @@
 {
     // GENERAL
+    // "editor.fontFamily": "Fira Code",
+    // "editor.fontWeight": 200,
+    // "editor.fontSize": 14,
+    // "editor.lineHeight": 19,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": false,
-    "editor.fontWeight": 500,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.cursorBlinking": "solid",
@@ -11,11 +14,12 @@
     "editor.cursorSurroundingLines": 10,
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.4,
+    "editor.linkedEditing": true,
+    "editor.occurrencesHighlight": "off",
+    "editor.acceptSuggestionOnCommitCharacter": true,
     "editor.tokenColorCustomizations": {
         // "variables": "#a6a28c",
-        "comments": "#21af3b",
+        "comments": "#23a93c",
         "textMateRules": [
             {
                 "name": "Comment",
@@ -36,8 +40,9 @@
         ]
     },
 
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
     "breadcrumbs.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "never",
@@ -64,6 +69,14 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
     },
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -109,39 +122,11 @@
             "after": ["g", "h"]
         },
         {
-            "before": ["<leader>", "p"],
-            "after": [],
-            "commands": [{ "command": "workbench.action.quickOpen" }]
-        },
-        {
-            "before": ["<leader>", "o"],
-            "after": [],
-            "commands": [{ "command": "workbench.action.quickOpen" }]
-        },
-        {
             "before": ["<leader>", "v"],
             "after": [],
             "commands": [
                 {
                     "command": "workbench.action.splitEditor"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "h"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusFirstEditorGroup"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "l"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusSecondEditorGroup"
                 }
             ]
         },
@@ -155,24 +140,6 @@
             ]
         },
         {
-            "before": ["<leader>", "e"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleSidebarVisibility"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "t"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.terminal.toggleTerminal"
-                }
-            ]
-        },
-        {
             "before": ["<leader>", "f"],
             "after": [],
             "commands": [
@@ -182,21 +149,11 @@
             ]
         },
         {
-            "before": ["<leader>", "a"],
+            "before": ["<leader>", "e"],
             "after": [],
             "commands": [
-                {
-                    "command": "workbench.action.toggleActivityBarVisibility"
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "g"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "lazygit.openLazygit"
-                }
+                "workbench.action.toggleActivityBarVisibility",
+                "workbench.action.toggleSidebarVisibility"
             ]
         },
         {
@@ -219,7 +176,6 @@
             "before": ["<leader>", "m", "g"],
             "commands": ["extension.we-three.markdownToc"]
         },
-
         {
             // Macro - Replay register in q and go 1 line down with j
             // keymap.set("n", "Q", "@qj", { desc = "Macro - Remapping of 'Q'" })
@@ -240,6 +196,14 @@
             "after": ["<", "g", "v"]
         }
     ],
-    "workbench.activityBar.location": "hidden",
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.accessibilitySupport": "false",
+    "workbench.statusBar.visible": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#363636",
+        "tab.activeBorderTop": "#0077ff"
+    },
+    "workbench.editor.editorActionsLocation": "hidden",
+    "window.density.editorTabHeight": "compact",
+    "workbench.layoutControl.enabled": false
 }

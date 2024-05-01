@@ -41,6 +41,9 @@ unsetopt share_history
 export XDG_CONFIG_HOME="$HOME/.config"
 alias nv=nvim
 alias chrome="open -a 'Google Chrome.app'"
-
+alias vscode="open -a 'Visual Studio Code.app'"
+# export PATH=$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH_TO_KEYSTORE="/users/Xavier"

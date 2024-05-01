@@ -2,13 +2,7 @@
 [
     {
         "key": "cmd+'",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "cmd+'",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminalFocus"
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "cmd+left",
@@ -31,8 +25,22 @@
         "command": "workbench.action.selectTheme"
     },
     {
+        "key": "cmd+n",
+        "command": "explorer.newFile"
+    },
+    {
         "key": "cmd+r",
         "command": "workbench.action.terminal.clear",
         "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "cmd+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.createTerminalEditor"
+                // "workbench.action.moveEditorToBelowGroup",
+            ]
+        }
     }
 ]
