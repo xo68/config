@@ -42,5 +42,29 @@
                 // "workbench.action.moveEditorToBelowGroup",
             ]
         }
+    },
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+b cmd+f",
+        "command": "workbench.action.toggleFullScreen"
+    },
+    {
+        "key": "cmd+b cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b cmd+v",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "cmd+b cmd+c",
+        "command": "toggle.window.commandCenter"
+    },
+    {
+        "key": "cmd+g g",
+        "command": "lazygit.openLazygit"
     }
 ]

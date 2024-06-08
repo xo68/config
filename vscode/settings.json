@@ -1,10 +1,11 @@
 {
     // GENERAL
     // "editor.fontFamily": "Fira Code",
-    // "editor.fontWeight": 200,
-    // "editor.fontSize": 14,
-    // "editor.lineHeight": 19,
     "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontWeight": 300,
+    // "editor.fontSize": 14,
+    "editor.lineHeight": 19,
+
     "editor.fontLigatures": false,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize": 0,
@@ -17,33 +18,11 @@
     "editor.linkedEditing": true,
     "editor.occurrencesHighlight": "off",
     "editor.acceptSuggestionOnCommitCharacter": true,
-    "editor.tokenColorCustomizations": {
-        // "variables": "#a6a28c",
-        "comments": "#23a93c",
-        "textMateRules": [
-            {
-                "name": "Comment",
-                "scope": [
-                    "comment",
-                    "comment.block",
-                    "comment.block.documentation",
-                    "comment.line",
-                    "comment.line.double-slash",
-                    "punctuation.definition.comment"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                    // "fontStyle": "italic underline"
-                    // "fontStyle": "italic bold underline",
-                }
-            }
-        ]
-    },
-
     "workbench.editor.empty.hint": "hidden",
-    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
     "breadcrumbs.enabled": false,
     "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 16,
+
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "never",
 
@@ -59,6 +38,9 @@
         "editor.defaultFormatter": "golang.go"
     },
     "gopls": { "ui.semanticTokens": true },
+
+    // pylint disable missing docstring message
+    "pylint.args": ["--disable=C0114", "--disable=C0115", "--disable=C0116"],
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.formatOnType": true,
@@ -140,15 +122,6 @@
             ]
         },
         {
-            "before": ["<leader>", "f"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleFullScreen"
-                }
-            ]
-        },
-        {
             "before": ["<leader>", "e"],
             "after": [],
             "commands": [
@@ -173,7 +146,7 @@
         },
         {
             // Markdown generate table of content
-            "before": ["<leader>", "m", "g"],
+            "before": ["<leader>", "m", "t"],
             "commands": ["extension.we-three.markdownToc"]
         },
         {
@@ -197,13 +170,15 @@
         }
     ],
     "workbench.iconTheme": "material-icon-theme",
-    "editor.accessibilitySupport": "false",
-    "workbench.statusBar.visible": true,
+    "editor.accessibilitySupport": "off",
     "workbench.colorCustomizations": {
         "statusBar.background": "#363636",
         "tab.activeBorderTop": "#0077ff"
     },
     "workbench.editor.editorActionsLocation": "hidden",
     "window.density.editorTabHeight": "compact",
-    "workbench.layoutControl.enabled": false
+    "window.zoomLevel": 0.5,
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "window.commandCenter": false
 }
