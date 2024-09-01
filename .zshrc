@@ -43,9 +43,13 @@ export XDG_CONFIG_HOME="$HOME/.config"
 alias nv=nvim
 alias chrome="open -a 'Google Chrome.app'"
 alias vscode="open -a 'Visual Studio Code.app'"
+alias bat='bat --theme zenburn --color=always'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+#Interactive nvim search
+alias inv='nvim $(fzf -m --preview="bat --color=always --theme zenburn {}")'
 
 # export PATH=$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

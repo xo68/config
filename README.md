@@ -12,3 +12,4 @@ List of tools,
 - [oh-my-zsh](https://ohmyz.sh/) - Great Zsh framework
 - [vscode](https://code.visualstudio.com) - vscode highly configured for vim style usage
 - [fzf](https://github.com/junegunn/fzf) - General-purpose command-line fuzzy finder
+- [bat](https://github.com/sharkdp/bat) - A cat clone with syntax highlighting and Git integration
